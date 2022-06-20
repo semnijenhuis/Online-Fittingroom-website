@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "VFR extension",
+    "version": "0.01",
+    "icons": {
+        "128": "./imgs/128.png",
+        "48": "./imgs/48.png",
+        "16": "./imgs/16.png"
+    },
+    "browser_action":{
+        "default_icon": "./imgs/16.png",
+        "default_popup": "./popup.html"  
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["./content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "permissions": [
+              "storage",
+              "notifications",
+              "contextMenus",
+              "activeTab"
+            ],
+    "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
+}

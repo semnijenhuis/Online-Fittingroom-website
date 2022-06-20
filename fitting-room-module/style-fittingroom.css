@@ -1,0 +1,541 @@
+/*phones*/
+@media only screen and (max-width: 768px) {
+
+    .scrolling-wrapper, .scrolling-wrapper2, .scrolling-wrapper3, .scrolling-wrapper4 {
+        display: none;
+    }
+
+    .modal-content {
+        width: 65% !important;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+}
+
+/*body{*/
+/*    overflow-y: visible;*/
+/*}*/
+
+.shirt {
+    z-index: 3;
+    cursor: move;
+}
+
+.trousers {
+    height: 320px;
+    width: 220px;
+    z-index: 2;
+    cursor: move;
+}
+
+.face {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 2;
+
+}
+
+.shoe {
+    z-index: 1;
+    cursor: move;
+}
+
+.topLayer {
+    z-index: 4;
+}
+
+.text {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ptag1 {
+    font-family: 'Karla', sans-serif;
+}
+
+.panel {
+    position: absolute;
+    top: 750px;
+}
+
+.panel p {
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* Styling for the virtual fitting module */
+.model-holder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    height: 55em;
+    width: 300px;
+    background-color: #D6D6D6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.change-face-button {
+    cursor: pointer;
+    width: 35px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    z-index: 10;
+}
+
+.gender {
+    cursor: pointer;
+    width: 35px;
+    position: absolute;
+    left: 250px;
+    top: 13px;
+    z-index: 4;
+}
+
+/* Scroll arrows next to body */
+#mannequin {
+    position: absolute;
+}
+
+.upper-left {
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    height: 25px;
+    transform: rotate(180deg);
+    z-index: 6;
+}
+
+.upper-right {
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    left: 285px;
+    height: 25px;
+    z-index: 6;
+
+}
+
+.topLayer-left {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    height: 25px;
+    transform: rotate(180deg);
+    z-index: 6;
+}
+
+.topLayer-right {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    left: 285px;
+    height: 25px;
+    z-index: 6;
+}
+
+.lower-left {
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    height: 25px;
+    transform: rotate(180deg);
+    z-index: 6;
+}
+
+.lower-right {
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    left: 285px;
+    height: 25px;
+    z-index: 6;
+}
+
+.shoe-left {
+    cursor: pointer;
+    position: absolute;
+    top: 680px;
+    height: 25px;
+    transform: rotate(180deg);
+    z-index: 6;
+}
+
+.shoe-right {
+    cursor: pointer;
+    position: absolute;
+    top: 680px;
+    left: 285px;
+    height: 25px;
+    z-index: 6;
+
+}
+
+/* Styling for the image adjust buttons */
+.adjust {
+    cursor: pointer;
+    background-color: rgb(119, 158, 85);
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    border-radius: 15px;
+    border: none;
+} .adjust:hover:hover {
+    background-color: rgb(93, 128, 59);
+} .adjust:active {
+    transform: translateY(1px);
+    }
+
+
+/* Styling for the skin color buttons */
+.skin-colors {
+    display: table;
+    margin: 0 auto;
+}
+
+ul#horizontal-list {
+    min-width: 25px;
+    list-style: none;
+    padding: 0;
+
+}
+
+ul#horizontal-list li {
+    display: inline;
+}
+
+.c {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+#c1 {
+    background-color: #FEE1B9;
+}
+
+#c2 {
+    background-color: #FDEEC7;
+}
+
+#c3 {
+    background-color: #FBC5A4;
+}
+
+#c4 {
+    background-color: #A87256;
+}
+
+#c5 {
+    background-color: #34251B;
+
+}
+
+
+.flex-container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    overflow: hidden;
+    padding-right: 15rem;
+}
+
+/* Styling for the horizontal scrolling clothing menus */
+.scrolling-wrapper {
+    position: relative;
+    left: 370px;
+    max-width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 1rem 0 0;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+
+.scrolling-wrapper2 {
+    position: relative;
+    left: 370px;
+    max-width: 61%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 3rem 1rem 1rem;
+    order: 2;
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+
+.scrolling-wrapper2 .card {
+    /*margin-left: 35px;*/
+    margin-right: 35px;
+
+}
+
+.scrolling-wrapper3 {
+    position: relative;
+    left: 370px;
+    max-width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 1rem;
+    order: 3;
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+
+.scrolling-wrapper3 .card {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.scrolling-wrapper4 {
+    position: relative;
+    left: 370px;
+    /*top: 50px;*/
+    max-width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 1rem 0 0;
+    order: 1;
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+
+.card {
+    display: inline-block;
+    cursor: pointer;
+    margin: auto;
+}
+
+.card img {
+    transition: filter 0.2s ease-in-out;
+}
+
+.card:hover img {
+    filter: drop-shadow(0 0 0.50rem rgb(95, 49, 49));
+}
+
+.modal {
+    display: none;
+    /*position: fixed;*/
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 30%;
+    height: fit-content;
+}
+
+.modal-content button {
+    float: bottom;
+    margin: auto;
+    width: fit-content;
+    color: #fff;
+    background-color: #2d8061;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px #999;
+    font-family: 'Karla', sans-serif;
+    z-index: 11;
+
+}
+
+.modal-content button:hover {
+    background-color: #1f5c45;
+    cursor: pointer;
+}
+
+.modal-content button:active {
+    box-shadow: 0 2px 3px #666;
+    transform: translateY(2px);
+}
+
+label {
+    cursor: pointer;
+    position: absolute;
+    top: 55px;
+    left: 15px;
+    z-index: 4;
+}
+
+.closeModal {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.camera {
+    position: relative;
+}
+
+video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 100%;
+    width: 100%;
+}
+
+#face-overlay {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    z-index: 10;
+    text-align: center;
+}
+
+#face-overlay img {
+    width: 35%;
+    display: inline-block;
+}
+
+#face-overlay p {
+    color: darkred;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    left: 250px;
+    top: 50px;
+}
+
+#uploadPhotoButton {
+    opacity: 0;
+    position: absolute;;
+    z-index: -1;
+}
+
+#canvas {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#confirm {
+    width: 15%;
+    height: 6%;
+    margin-top: 5%;
+    display: none;
+}
+
+#snap {
+    margin-top: 5%;
+}
+
+#placeholder {
+    font-weight: bold;
+}
+
+#faceCanvas {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 6%;
+    top: 2%;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    font-family: 'Karla', sans-serif;
+    font-size: large;
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+#uploadFile{
+    position: absolute;
+    left: 100px;
+    z-index: 14;
+}
+
+.removeButton {
+    width: 1.5rem;
+    height: 1.5rem;
+    float: right;
+}
+

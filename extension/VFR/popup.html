@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Fitting</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link  href="./style-old.css" rel="stylesheet" type="text/css"> -->
+</head>
+
+<body class="body">
+    
+    <div class="model-holder">
+        
+        <!-- onClickedImage(this.className) -->
+        <img class="face"  src="images/face.png ">
+       
+        <div class="upper-body">
+            <img class="upper-left" src="images/arrow.png">
+            <img class="shirt"  src="images/shirt1.png">
+            <img class="upper-right" src="images/arrow.png">
+        </div>
+        
+        <div class="lower-body">
+            <img class="lower-left" src="images/arrow.png">
+            <img class="trousers" src="images/jeans2.png">
+            <img class="lower-right" src="images/arrow.png">
+        </div>
+
+        <div class="shoes">
+            <img class="shoe-left" src="images/arrow.png">
+            <img class="shoe" src="images/shoes2.png">
+            <img class="shoe-right" src="images/arrow.png">
+        </div>
+
+
+        <img class="bodyImg"  src="images/body.png">
+        
+        <div class="panel">
+
+            <div class="banner">
+                <p class="ptag1">Item selected: </p>
+            </div>
+            
+            <div>
+                <button class="adjust" id="heightUp">Height +</button>
+                <button class="adjust" id="heightDown">Height -</button>
+                <button class="adjust" id="widthUp">Width +</button>
+                <button class="adjust" id="widthDown">Width -</button>
+            </div>
+            
+            <div class="skin-colors">
+                <p class="text">Skin color</p>
+                <ul id="horizontal-list">
+                    <li><button class="c1" value="1"></button></li>
+                    <!-- colorChange(this.value) -->
+                    <li><button class="c2"></button></li>
+                    <li><button class="c3"></button></li>
+                    <li><button class="c4"></button></li>
+                    <li><button class="c5"></button></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="scrolling-wrapper">
+        <div class="card"><img src="images/shirt1.png" id=shirt1 ></div>
+        <div class="card"><img src="images/shirt2.png" id=shirt2 width="230px"></div>
+        <div class="card"><img src="images/shirt3.png" id=shirt3 width="175px"></div>
+        <div class="card"><img src="images/shirt4.png" id=shirt4 width="230px"></div>
+    </div>
+    
+    <div class="scrolling-wrapper2">
+        <div class="card"><img src="images/jeans1.png" id=jeans1 width="140px" ></div>
+        <div class="card"><img src="images/jeans2.png" id=jeans2 width="110px"></div>
+        <div class="card"><img src="images/jeans3.png" id=jeans3 width="105px"></div>
+    </div>
+    
+    <div class="scrolling-wrapper3">
+        <div class="card"><img src="images/shoes1.png" id=shoes1 width="200px"></div>
+        <div class="card"><img src="images/shoes2.png" id=shoes2 width="200px"></div>
+        <div class="card"><img src="images/shoes3.png" id=shoes3 width="200px"></div>
+        <div class="card"><img src="images/shoes4.png" id=shoes4 width="200px"></div>
+    </div>
+        
+    
+    
+            
+    <script src="content.js" defer ></script>
+</body>
+</html>

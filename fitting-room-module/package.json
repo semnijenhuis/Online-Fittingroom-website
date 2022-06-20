@@ -1,0 +1,15 @@
+{
+  "name": "fitting-room-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../test-webstore/index.js",
+  "scripts": {
+    "lint": "npx eslint ./*.js ",
+    "lint-fix": "npx eslint ./*.js --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
+}

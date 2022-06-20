@@ -1,0 +1,251 @@
+/* Styling for the virtual model attributes */
+.bodyImg {
+    position: inherit;
+    top: 70px;
+    z-index: 0;
+    filter: opacity(25%);
+    
+}
+.shirt {
+    z-index: 3;
+    cursor: move;
+    position: absolute;
+    top: 145px;
+    left: 90px;
+    height: 260px;
+}
+.trousers {
+    height: 320px;
+    width: 220px;
+    z-index: 2;
+    cursor: move;
+}
+.face {
+    position: absolute;
+    left: 140px;
+    top: 65px;
+    z-index: 4;
+}
+.shoe {
+    z-index: 1;
+    cursor: move;
+}
+
+
+.text{
+    font-family: 'Karla', sans-serif;
+    font-size: 20;
+    text-align: center;
+}
+
+.ptag1{
+    font-family: 'Karla', sans-serif;
+}
+
+.panel {
+    position: absolute;
+    top: 750px;
+}
+
+
+/* Styling for the virtual fitting module */
+.model-holder{
+    position: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    border-radius: 15px;
+    margin: 10px;
+    height: 80%;
+    width: 270px;
+    background-color: #D6D6D6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Scroll arrows next to body */
+.upper-left{
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+.upper-right{
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    left: 285px;
+    height: 25px;
+
+}
+.lower-left{
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+.lower-right{
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    left: 285px;
+    height: 25px;
+
+}
+.shoe-left{
+    cursor: pointer;
+    position: absolute;
+    top: 680px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+.shoe-right{
+    cursor: pointer;
+    position: absolute;
+    top: 680px;
+    left: 285px;
+    height: 25px;
+
+}
+
+/* Styling for the image adjust buttons */
+.adjust{
+    cursor: pointer;
+    background-color:rgb(228, 212, 142);
+    font-size: 15;
+    font-family: 'Karla', sans-serif;
+    border-radius: 5px;
+} .adjust:hover:hover {
+    background-color: rgb(197, 179, 100);
+}
+
+
+/* Styling for the skin color buttons */
+.skin-colors{
+display: table;
+margin: 0 auto;
+}
+
+ul#horizontal-list{
+    min-width: 25px;
+    list-style: none;
+    padding: 0;
+    
+    }
+    ul#horizontal-list li {
+        display: inline;
+    }
+.c1{
+    background-color: #FEE1B9;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}
+.c2{
+    background-color: #FDEEC7;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px; 
+    cursor: pointer;
+}
+.c3{
+    background-color: #FBC5A4;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px; 
+    cursor: pointer;
+}
+.c4{
+    background-color: #A87256;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px; 
+    cursor: pointer;
+}
+.c5{
+    background-color: #34251B;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%; 
+    border-width: 1px;
+    cursor: pointer;
+}
+
+
+/* Styling for the horizontal scrolling clothing menus */
+.scrolling-wrapper {
+    position: absolute;
+    left: 370px;
+    top: 50px;
+    max-width: 50%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 5px;;
+}
+.scrolling-wrapper2 {
+    position: absolute;
+    left: 370px;
+    top: 430px;
+    max-width: 50%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+}.scrolling-wrapper2 .card {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.scrolling-wrapper3 {
+    position: absolute;
+    left: 370px;
+    top: 775px;
+    max-width: 50%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 5px;
+}.scrolling-wrapper3 .card  {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card{
+    display: inline-block;
+    cursor: pointer;
+    margin: auto;
+}
+.card img {
+    transition: filter 0.2s ease-in-out;
+}
+.card:hover img {
+    filter: drop-shadow(0 0 0.50rem rgb(95, 49, 49));
+}
+.cardShoes{ 
+    display: inline-block;
+    cursor: pointer;
+    margin: auto;
+}
+
+.body{
+    display: grid;
+    height: 1500px;
+    width: 1000px;
+}
+
+

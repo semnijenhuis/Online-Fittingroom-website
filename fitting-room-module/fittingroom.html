@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Virtual Fitting</title>
+    <link rel="stylesheet" href="style-fittingroom.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@1.0.0"></script>
+
+    <script type="module" src="./threeJs/three.min.js"></script>
+    <script type="module" src="./threeJs/GLTFLoader.js"></script>
+    <script type="module" src="./threeJs/three.module.js"></script>
+    <script type="module" src="./threeJs/dat.gui.module.js"></script>
+
+</head>
+
+<body>
+<!-- Load TensorFlow.js -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+<!-- Load BodyPix -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+
+    <div class="model-holder">
+
+        <div>
+            <img id="openCam" class="change-face-button" src="assets/change.png" alt="change face button">
+            <br>
+            <label for="uploadPhotoButton"><img src="assets/upload-photo.png"></label>
+<!--            <img class="face" src="" onclick="onClickedImage(this.className)">-->
+            <input type="file" id="uploadPhotoButton"/>
+            <canvas class="faceCanvas" id="faceCanvas" onclick="onClickedImage(this.className)">
+            </canvas>
+        </div>
+
+    <div id="mannequin">
+        <div class="upper-body">
+            <img id="upperLeft" class="upper-left" src="assets/arrow.png">
+            <img class="shirt" src="../test-webstore/images/shirt1.png" onclick="onClickedImage(this.className)">
+            <img id="upperRight" class="upper-right" src="assets/arrow.png">
+        </div>
+
+        <div class="top">
+            <img id="topLeft" class="topLayer-left" src="assets/arrow.png">
+            <img class="topLayer" onclick="onClickedImage(this.className)">
+            <img id="topRight" class="topLayer-right" src="assets/arrow.png">
+        </div>
+
+        <div class="lower-body">
+            <img id="lowerLeft" class="lower-left" src="assets/arrow.png">
+            <img class="trousers" src="../test-webstore/images/jeans2.png" onclick="onClickedImage(this.className)">
+            <img id="lowerRight" class="lower-right" src="assets/arrow.png">
+        </div>
+
+        <div class="shoes">
+            <img id="shoeLeft" class="shoe-left" src="assets/arrow.png">
+            <img class="shoe" src="../test-webstore/images/shoes2.png" onclick="onClickedImage(this.className)">
+            <img id="shoeRight" class="shoe-right" src="assets/arrow.png">
+        </div>
+
+    </div>
+
+    <div>
+        <button id="button-change">
+            <img id='img-changing' class="gender" src="assets/change-gender.png">
+        </button>
+    </div>
+
+    <div class="panel">
+
+        <div>
+            <button class="adjust" onclick=scaleUp()>Height +</button>
+            <button class="adjust" onclick=scaleDown()>Height -</button>
+            <button class="adjust" onclick=widthUp()>Width +</button>
+            <button class="adjust" onclick=widthDown()>Width -</button>
+        </div>
+
+        <div class="skin-colors">
+            <p class="text">Skin color</p>
+            <ul id="horizontal-list">
+                <li>
+                    <button class="c" id="c1"></button>
+                </li>
+                <li>
+                    <button class="c" id="c2"></button>
+                </li>
+                <li>
+                    <button class="c" id="c3"></button>
+                </li>
+                <li>
+                    <button class="c" id="c4"></button>
+                </li>
+                <li>
+                    <button class="c" id="c5"></button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="bodyImg" class="bodyObj">
+        <script type="module" class="bodyModel" src="./model.js" defer></script>
+    </div>
+
+</div>
+
+<div class="flex-container" id="clothesListings">
+    <div class="scrolling-wrapper" id="topList">
+    </div>
+
+    <div class="scrolling-wrapper2" id="bottomList">
+    </div>
+
+    <div class="scrolling-wrapper3" id="shoeList">
+    </div>
+</div>
+
+    <div id="cameraModal" class="modal">
+        <div class="modal-content">
+            <span class="closeModal">&times;</span>
+            <div class="camera">
+                <video id="video" ></video>
+                <div id="face-overlay">
+                    <img src="assets/oval.png">
+                    <p class="overlay-text">Please keep your face inside the oval</p>
+                </div>
+                <button id="snap">Take Picture</button>
+            </div>
+            <canvas id="canvas">
+                <div class="output">
+                    <img id="photo" alt="The screen capture will appear in this box">
+                </div>
+            </canvas>
+            <button id="confirm">Confirm</button>
+        </div>
+    </div>
+
+    <div id="snackbar">Nothing selected.</div>
+
+    <script src="script.js" defer ></script>
+</body>
+</html>
