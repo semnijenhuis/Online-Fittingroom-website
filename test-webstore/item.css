@@ -1,0 +1,214 @@
+html, body, .container {
+    background-color: #F0F0F0;
+}
+.item-row{
+    display: flex;
+    width: 100%;
+}
+.item-column{
+    width: 50%;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+.modal-full {
+    position: center;
+    max-width: 90%;
+    max-height: 100%;
+    overflow: hidden;
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+
+.modal.show .modal-custom {
+    transition: transform 0.20s linear;
+}
+
+/* modal vertical center */
+.modal.show .modal-center {
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    top: 50%;
+    margin: 0 auto;
+}
+
+.modal-header{
+    background: #666666;
+    box-shadow: 0 2px 6px #999;
+}
+
+.image-button {
+    border-radius: 20px 20px 20px 20px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.image-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.image-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.image-button:hover span {
+    padding-right: 25px;
+}
+
+.image-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.VFR-button {
+
+    border-radius: 100px 100px 100px 100px;
+    background-color: #3e1704;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 500px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.VFR-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.VFR-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.VFR-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.VFR-button:hover span {
+    padding-right: 25px;
+}
+
+.VFR-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.ATSC-button {
+
+    border-radius: 100px 100px 100px 100px;
+    background-color: #f8b89b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 500px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.ATSC-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.ATSC-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.ATSC-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.ATSC-button:hover span {
+    padding-right: 25px;
+}
+
+.ATSC-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.carousel-item{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+.ATSC-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.webShopImage{
+    height: 850px;
+    width: auto;
+
+    float: right;
+}
+
+.backbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.backbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.backbutton:hover span {
+    padding-right: 25px;
+}
+
+.image-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Webstore</title>
+</head>
+<body>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. needed for Popup -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+<br>
+<button  id="openTool" type="button" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal">
+    <img src="img/fittingroom.png">
+</button>
+
+<!-- Modal -->
+<div id="exampleModal"class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog w-100 modal-custom modal-full" >
+        <div class="modal-content h-100 border-0 rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fitting Room</h5>
+                <button type="button" class="fittingroombutton" data-dismiss="modal">Close</button>
+
+            </div>
+            <div class="modal-body">
+
+                <iframe id="frame" class="frame" src="../fitting-room-module/fittingroom.html" height=980px"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="homepage-row">
+
+    <div class="homepage-collum-image">
+        <img class="homepage-image-man" src="./img/homestoreimage.png" alt="Homepageimage">
+    </div>
+    <div class="homepage-collum">
+        <h4> American EAgle</h4>
+        <h1>
+            Explore brand<br>
+            new fashion clothes
+        </h1>
+        <br>
+        <DIV class="blackline" ></DIV>
+        <br>
+        <span>
+            American Eagle Outfitters® (NYSE: AEO) is a leading global specialty retailer offering high-quality, on-trend clothing, accessories and personal care products at affordable prices under its American Eagle® and Aerie® brands. We are an inclusive, optimistic and empowering company that celebrates the individuality of our customers and associates. Our purpose is to show the world that there’s REAL power in the optimism of youth.
+        </span>
+        <br>
+        <button class="shop-button" onclick="window.location.href='#element_target'">Let's Shop</button>
+
+    </div>
+
+    <div class="homepage-collum-socialmedia">
+        <img class="socialmedia-icon" src="./img/facebook-icon.png" alt="facebook">
+        <br>
+        <br>
+        <img class="socialmedia-icon" src="./img/instagram-icon.png" alt="instagram">
+        <br>
+        <br>
+        <img class="socialmedia-icon" src="./img/twitter-icon.png" alt="twitter">
+    </div>
+</div>
+
+<div class="homepage-bottom-row">
+    <div class="bottom-row-empy">
+        <br>
+    </div>
+    <div class="bottom-row-info">
+
+        <h3>
+            <br>
+            <B>Algemeen telefoonnummer</B>
+            <br> 088 - 019 8888
+            <br> <br>
+            <B>Adres</B>
+            <br> Handelskade 75
+            7417 DH Deventer
+            <br> <br>
+            <B>Openingstijden</B>
+            <br>maandag t/m donderdag 07.30 - 22.00 uur
+        </h3>
+        <br><br>
+        <h2>
+            Sale
+        </h2>
+    </div>
+
+</div>
+
+<div id="parent" class="clothing-grid">
+    <div class="clothing-row">
+
+        <div class="col">
+            <div class="thumbnail" >
+                <button id="first" class="fittingToolButton shirtSlot"><span>Add FR</span></button>
+                <a href="item.html">
+                    <img class="webShopImage" src="img/shirt9.png">
+                </a>
+            </div>
+        </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton shirtSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                    <img class="webShopImage" src="img/dress1.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton shirtSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="img/shirt3.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton pantsSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="img/pants1.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton pantsSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="img/pants2.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton overlaySlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="img/jacket1.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton shirtSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/shirt1.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton shirtSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage"  src="images/shirt2.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton shirtSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/shirt3.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton shirtSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/shirt4.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton pantsSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/jeans1.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton pantsSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/jeans2.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton pantsSlot"><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/jeans3.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton "><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/shoes1.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton "><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/shoes2.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton "><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/shoes3.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="thumbnail">
+                    <button class="fittingToolButton "><span>Add FR</span></button>
+                    <a href="item.html">
+                        <img class="webShopImage" src="images/shoes4.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="element_target"></div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous">
+    </script>
+            <script type="module" src="index.js" defer></script>
+</div>
+</div>
+</body>
+</html>

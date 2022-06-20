@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="item.css">
+
+    <title>Webstore</title>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<button class="fittingToolButton" onclick="window.location.href='index.html'"><span>Let's go back</span></button>
+
+<div class="item-row">
+    <div class="item-column" >
+        <a href="item.html">
+            <img class="webShopImage" src="img/dress1.png">
+        </a>
+    </div>
+    <div class="item-column">
+        <h1>The prettiest T shirt</h1>
+        <tr>
+            <button class="image-button"><span>S </span></button>
+            <button class="image-button"><span>M </span></button>
+            <button class="image-button"><span>L </span></button>
+        </tr>
+        <p><br>
+            <br>
+        <p><br>
+            <br>
+
+        <button class="VFR-button" data-toggle="modal" data-target="#exampleModal"><span>Virtual Fitting Room </span></button>
+        <p><br>
+            <br>
+        <button class="ATSC-button"><span>Add to Shopping cart </span></button>
+
+        <!-- Modal -->
+        <div id="exampleModal"class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog w-100 modal-custom modal-full" >
+                <div class="modal-content h-100 border-0 rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fitting Room</h5>
+
+                    </div>
+                    <div class="modal-body">
+
+                        <iframe id="frame" class="frame" src="../fitting-room-module/fittingroom.html" width="700px" height=800px"></iframe>
+                        <script src="../fitting-room-module/script.js" defer ></script>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="fittingroombutton" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+

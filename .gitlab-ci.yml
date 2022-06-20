@@ -1,0 +1,36 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build the module:
+  stage: build
+  image: node
+  script:
+    - cp -r fitting-room-module/ test-webstore/ ./public/
+    - cd ./public
+  artifacts:
+    paths:
+      - ./public
+
+linting:
+  stage: test
+  image: node
+  script:
+    - cd ./public/fitting-room-module/
+    - npm run lint-fix
+
+# test e2e cypres:
+#   stage: test
+#   image: cypress/base:10
+#   script:
+#     - cd ./public/
+#     - npm run cypress
+
+deploy to surge:
+  stage: deploy
+  image: node
+  script:
+  - npm install --global surge
+  - surge --project ./public --domain hbo-a5-dev.surge.sh
+  #

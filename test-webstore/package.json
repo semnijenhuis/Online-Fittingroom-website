@@ -1,0 +1,14 @@
+{
+  "name": "test-webstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../fitting-room-module/script.js",
+  "scripts": {
+    "cypress": "npx cypress run --headless"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.5.0"
+  }
+}

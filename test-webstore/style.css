@@ -1,0 +1,779 @@
+.video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.clothing-grid {
+padding: 100px;
+}
+
+img {
+    width:100%;
+}
+
+html, body, .container {
+    background-color: #F0F0F0;
+}
+
+.navbar {
+    background-color: #a6a6a6;
+}
+
+.nav-item {
+    padding-left: 2rem;
+}
+
+.nav-link {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* Styling for the virtual model attributes */
+.bodyImg {
+    position: absolute;
+    width: 250px;
+    height: 650px;
+    top: 67px;
+    left: 30px;
+    z-index: 0;
+    filter: opacity(95%);
+}
+
+.shirt {
+    z-index: 3;
+    cursor: move;
+}
+
+.trousers {
+    height: 320px;
+    width: 220px;
+    z-index: 2;
+    cursor: move;
+}
+
+.face {
+    z-index: 5;
+
+}
+
+.frame {
+    height: 59rem;
+}
+
+.shoe {
+    z-index: 1;
+    cursor: move;
+}
+
+.topLayer {
+    z-index: 4;
+    cursor: move;
+}
+
+
+.text {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ptag1 {
+    font-family: 'Karla', sans-serif;
+}
+
+.panel {
+    position: absolute;
+    top: 50rem;
+}
+
+
+/* Styling for the virtual fitting module */
+.model-holder {
+    /* display:inline; */
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 65px;
+    /*padding-bottom: 65px;*/
+    border-radius: 15px;
+    margin: 10px;
+    height: 100%;
+    width: 270px;
+    background-color: #D6D6D6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Scroll arrows next to body */
+.upper-left {
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+.upper-right {
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    left: 285px;
+    height: 25px;
+
+}
+
+topLayer-left {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+topLayer-right {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    left: 285px;
+    height: 25px;
+}
+
+.lower-left {
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+.lower-right {
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    left: 285px;
+    height: 25px;
+
+}
+
+.shoe-left {
+    cursor: pointer;
+    position: absolute;
+    top: 680px;
+    height: 25px;
+    transform: rotate(180deg);
+}
+
+.shoe-right {
+    cursor: pointer;
+    position: absolute;
+    top: 680px;
+    left: 285px;
+    height: 25px;
+
+}
+
+/* Styling for the image adjust buttons */
+.adjust {
+    cursor: pointer;
+    background-color: rgb(228, 212, 142);
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    border-radius: 5px;
+}
+
+.adjust:hover:hover {
+    background-color: rgb(197, 179, 100);
+}
+
+
+/* Styling for the skin color buttons */
+.skin-colors {
+    display: table;
+    margin: 0 auto;
+}
+
+ul#horizontal-list {
+    min-width: 25px;
+    list-style: none;
+    padding: 0;
+
+}
+
+ul#horizontal-list li {
+    display: inline;
+}
+
+.c1 {
+    background-color: #FEE1B9;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.c2 {
+    background-color: #FDEEC7;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.c3 {
+    background-color: #FBC5A4;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.c4 {
+    background-color: #A87256;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.c5 {
+    background-color: #34251B;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+/* Styling for the horizontal scrolling clothing menus */
+.scrolling-wrapper {
+    position: absolute;
+    left: 370px;
+    top: 50px;
+    max-width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 3rem;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.scrolling-wrapper2 {
+    position: absolute;
+    left: 370px;
+    max-width: 61%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 3rem;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.scrolling-wrapper3 {
+    position: absolute;
+    left: 370px;
+    top: 775px;
+    max-width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 3rem;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.scrolling-wrapper3 .card {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.scrolling-wrapper4 {
+    position: absolute;
+    left: 370px;
+    top: 50px;
+    max-width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* background-color: #e2e2e2; */
+    border-radius: 15px;
+    padding: 3rem;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.card {
+    display: inline-block;
+    cursor: pointer;
+    margin: auto;
+}
+
+.card img {
+    transition: filter 0.2s ease-in-out;
+
+}
+
+.scrolling-wrapper2 .card img {
+    width:10rem;
+}
+
+.card:hover img {
+    filter: drop-shadow(0 0 0.50rem rgb(95, 49, 49));
+}
+
+.thumbnail {
+
+     width: 80%;
+}
+
+.clothingButton {
+    width: 33%;
+}
+
+.webShopImage {
+    height: 100px;
+    width: auto;
+}
+
+/* .webShopImage{
+    height: 100px;
+    width: auto;
+} */
+
+.clothingButton {
+    width: fit-content;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #639eff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px #999;
+}
+
+.clothingButton:hover {
+    background-color: #3e8e41
+}
+
+.clothingButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.fittingroombutton{
+    width: 5%;
+    color: #fff;
+    background-color: #9e3939;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px #999;
+    transition: 0.2s ease-in-out;
+}
+
+.fittingroombutton:hover {
+    background-color: #7b1b1b
+}
+
+.fittingroombutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+iframe {
+    display: block;
+    width: 100%;
+}
+
+.fittingToolButton {
+    width: fit-content;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 20%;
+}
+
+.clothing-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.clothing-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+/*copy from codeply*/
+
+/*.modal-body {*/
+/*    padding: 0;*/
+/*}*/
+
+.modal-full {
+    position: center;
+    max-width: 95%;
+    max-height: 100%;
+    overflow: hidden;
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.modal.show .modal-custom {
+    transition: transform 0.20s linear;
+}
+
+/* modal vertical center */
+.modal.show .modal-center {
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    margin: 0 auto;
+}
+
+.modal-header{
+    color: black;
+    background: white;
+    box-shadow: 0 2px 6px #999;
+    height: 10px;
+}
+
+
+/*shoppingcart css*/
+.item-row {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.item-column {
+    width: 50%;
+    padding: 30px;
+    height: 30px;
+}
+
+.carousel slide {
+    height: 30px;
+}
+
+.sr-only {
+    color: black;
+}
+
+.carousel-inner {
+    box-shadow: 0 2px 6px #999;
+}
+
+
+.item-column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+
+}
+
+.image-button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.image-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.image-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.image-button:hover span {
+    padding-right: 25px;
+}
+
+.image-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    font-family: 'Karla', sans-serif;
+    font-size: large;
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/*homepage*/
+.homepage-row{
+    height: 100%;
+    width: 100%;
+}
+.homepage-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.homepage-collum-image{
+    float: left;
+
+    width: 500px;
+
+}
+
+.homepage-collum{
+    height: 100%;
+    float: left;
+    margin: auto;
+    width: 40%;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+}
+.homepage-collum-socialmedia{
+    height: 100%;
+    float: left;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.socialmedia-icon-image{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#000000;
+
+}
+
+
+.homepage-image-man{
+    height: 40%;
+}
+h1{
+    font-family: serif
+}
+span{
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 15px
+}
+.shop-button{
+    background-color: #ef3030; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 25px;
+    width: 250px;
+}
+.shop-button:hover {
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 0px;
+    background-color:#000000;
+
+}
+.socialmedia-icon:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24)
+}
+
+.socialmedia-icon{
+    height: 45px;
+    width: 45px;
+}
+.blackline{
+    background-color:#ef3030;
+    height:10px;
+    width:100%;
+    border-radius: 25px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bottom-row-info{
+    float: left;
+    width: 30%;
+    background-color: #000000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+}
+h2{
+    color: #ffffff;
+    font-size: 180px;
+    text-align:center;
+}
+h3{
+    color: #ffffff;
+    font-size: 15px
+}
+.bottom-row-empy{
+    float: left;
+    width: 70%;
+}
+.homepage-bottom-row{
+
+
+}
+
+.homepage-bottom-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+h4{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+
+
+
+.fittingToolButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+}
+.fittingToolButton:active {
+    background-color: #000000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    transform: translateY(4px);
+}
+
+.fittingToolButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+
+.fittingToolButton:hover span {
+    padding-right: 25px;
+    content:"Reply!"
+}
+
+.fittingToolButton:hover span:after {
+    opacity: 1;
+    right: 0;
+
+
+}
+
+#openTool {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 5px;
+    width: 6%;
+    background: #3FB8AF;
+}
+#openTool:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
